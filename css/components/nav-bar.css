@@ -1,0 +1,18 @@
+.nav-bar {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-bar__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar__link {
+  color: var(--kokoa-clone-brown);
+}

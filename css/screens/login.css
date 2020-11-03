@@ -40,11 +40,11 @@
 }
 
 #login-form input:focus {
-  border-color: var(--kokoa-brown);
+  border-color: var(--kokoa-clone-brown);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--kokoa-yellow);
+  background-color: var(--kokoa-clone-yellow);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
@@ -52,11 +52,14 @@
 
 #login-form input[type="submit"]:active {
   color: white;
+  opacity: 0.8;
 }
 
 #login-form a {
   text-align: center;
-  text-decoration: none;
-  color: inherit;
   font-size: 15px;
+}
+
+#login-form a:active {
+  opacity: 0.3;
 }
