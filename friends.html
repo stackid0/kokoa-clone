@@ -24,6 +24,61 @@
       </div>
     </div>
 
+    <header class="screen-header">
+      <h1 class="screen-header__title">친구 목록</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-music fa-2x"></i></span>
+        <span><i class="fas fa-cog fa-2x"></i></span>
+      </div>
+    </header>
+
+    <a id="friends-display-link"
+      ><i class="fas fa-info-circle"></i>친구 이름 표시<i
+        class="fas fa-chevron-right"
+      ></i
+    ></a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/me.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">나</h4>
+            <!--<h6 class="user-component__subtitle">실험 중인 글입니다.</h6>-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>채널</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="img/bot.png"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                채팅 봇
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <nav class="nav-bar">
       <ul class="nav-bar__list">
         <li class="nav-bar__btn">
@@ -32,8 +87,9 @@
           ></a>
         </li>
         <li class="nav-bar__btn">
-          <a class="nav-bar__link" href="#"
-            ><i class="far fa-comment fa-2x"></i
+          <a class="nav-bar__link" href="#">
+            <span class="nav-bar__notification-1">1</span>
+            <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav-bar__btn">
@@ -42,8 +98,9 @@
           ></a>
         </li>
         <li class="nav-bar__btn">
-          <a class="nav-bar__link" href="#"
-            ><i class="fas fa-ellipsis-h fa-2x"></i
+          <a class="nav-bar__link" href="#">
+            <div class="nav-bar__notification-2"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
         </li>
       </ul>

@@ -14,5 +14,29 @@
 }
 
 .nav-bar__link {
-  color: var(--kokoa-clone-brown);
+  position: relative;
+}
+
+.nav-bar__notification-1 {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.nav-bar__notification-2 {
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
 }
