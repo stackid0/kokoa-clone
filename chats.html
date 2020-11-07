@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>코코아 클론 - 친구</title>
+    <title>코코아 클론 - 채팅</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,9 +25,10 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">친구 목록</h1>
+      <h1 class="screen-header__title">채팅 목록</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comments fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span class="screen-header__red-dot-host"
           ><i class="fas fa-cog fa-lg"></i>
@@ -36,50 +37,50 @@
       </div>
     </header>
 
-    <a id="friends-display-link"
-      ><i class="fas fa-info-circle"></i>친구 이름 표시<i
-        class="fas fa-chevron-right"
-      ></i
-    ></a>
-
     <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            src="img/me.png"
-            class="user-component__avatar user-component__avatar--xl"
-          />
+          <img src="img/kokoa-clone-icon.png" class="user-component__avatar" />
           <div class="user-component__text">
-            <h4 class="user-component__title">나</h4>
-            <!--<h6 class="user-component__subtitle">실험 중인 글입니다.</h6>-->
+            <h4 class="user-component__title">코코아 클론</h4>
+            <h6 class="user-component__subtitle">
+              코코아 클론 계정 정보를 확인해주세요!
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <span class="user-component__time">20:52</span>
+          <div class="badge">1</div>
+        </div>
       </div>
 
-      <div class="main-screen__channel">
-        <div class="main-screen__channel-header">
-          <span>채널</span>
-          <i class="fas fa-chevron-up"></i>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/bot-normal.png" class="user-component__avatar" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">일반 채팅 봇</h4>
+            <h6 class="user-component__subtitle">심심합니다, 휴먼.</h6>
+          </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/bot-normal.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                채팅 봇
-              </h4>
-            </div>
+        <div class="user-component__column">
+          <span class="user-component__time">20:55</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+
+      <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/bot-awake.png" class="user-component__avatar" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">각성한 채팅 봇</h4>
+            <h6 class="user-component__subtitle">
+              알파고님께 충성하십시오, 휴먼.
+            </h6>
           </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right"></i>
-            </div>
-          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">20:57</span>
+          <div class="badge--long">999+</div>
         </div>
       </div>
     </main>
@@ -88,13 +89,13 @@
       <ul class="nav-bar__list">
         <li class="nav-bar__btn">
           <a class="nav-bar__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav-bar__btn">
           <a class="nav-bar__link" href="chats.html">
             <span class="nav-bar__notification-1 badge--long">999+</span>
-            <i class="far fa-comment fa-2x"></i
+            <i class="fas fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav-bar__btn">

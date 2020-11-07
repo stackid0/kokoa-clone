@@ -1,7 +1,7 @@
 .screen-header {
   display: flex;
   justify-content: space-between;
-  padding: 50px var(--horizontal-space);
+  padding: 55px var(--horizontal-space) 30px var(--horizontal-space);
   align-items: center;
   color: black;
 }
@@ -12,5 +12,19 @@
 }
 
 .screen-header__icons span {
-  margin-left: 40px;
+  margin-left: 25px;
+}
+
+.screen-header__red-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: red;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+.screen-header__red-dot-host {
+  position: relative;
 }

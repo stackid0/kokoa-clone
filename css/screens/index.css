@@ -9,6 +9,7 @@
 .welcome-header__title {
   margin-bottom: 20px;
   font-size: 25px;
+  color: black;
 }
 
 .welcome-header__text {
@@ -16,6 +17,7 @@
   opacity: 0.7;
   line-height: 20px;
   margin-top: 20px;
+  color: black;
 }
 
 #login-form {
@@ -37,7 +39,7 @@
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--kokoa-clone-gray);
 }
 
 #login-form input:focus {
@@ -60,6 +62,7 @@
 #login-form a {
   text-align: center;
   font-size: 15px;
+  color: black;
 }
 
 #login-form a:active {

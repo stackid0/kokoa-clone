@@ -1,5 +1,9 @@
 :root {
   --kokoa-clone-yellow: #fae100;
   --kokoa-clone-brown: #3b1c1c;
+  --kokoa-clone-gray: rgba(0, 0, 0, 0.4);
+
   --horizontal-space: 25px;
+
+  --separate-line: 1px solid rgba(0, 0, 0, 0.2);
 }

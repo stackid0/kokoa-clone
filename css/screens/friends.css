@@ -9,23 +9,19 @@
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--kokoa-clone-gray);
   margin: 0px 10px 0px 20px;
 }
 
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-}
-
-.friends-screen__channel {
+.main-screen__channel {
   margin-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--separate-line);
   padding-top: 20px;
 }
 
-.friends-screen__channel-header {
+.main-screen__channel-header {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--kokoa-clone-gray);
 }
