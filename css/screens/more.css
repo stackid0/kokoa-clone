@@ -1,0 +1,78 @@
+.fa-exclamation-circle {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.more-screen .icon-row {
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.more-screen__empty {
+  width: 70px;
+}
+
+.more-screen__for-balance {
+  position: relative;
+  left: 6px;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--separate-line);
+  padding-top: 30px;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 60px;
+}
+
+.more-screen__red-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: red;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.more-screen__for-red-dot {
+  position: relative;
+}
+
+.more-suggestions__icon-image,
+.more-suggestions__kokoa-story-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.more-suggestions__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-suggestions__icon-text {
+  font-size: 18px;
+  color: var(--kokoa-clone-gray);
+}
+
+.more-suggestions__kokoa-story-icon {
+  background-color: var(--kokoa-clone-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+}

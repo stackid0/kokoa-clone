@@ -1,21 +1,3 @@
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  color: black;
-}
-
-.find-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.find-icons span {
-  font-size: 20px;
-  margin-top: 20px;
-}
-
 .recommended-friends {
   border-top: var(--separate-line);
   border-bottom: var(--separate-line);
