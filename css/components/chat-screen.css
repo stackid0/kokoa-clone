@@ -8,24 +8,143 @@
   width: 100%;
   box-sizing: border-box;
   background-color: #abc1d1;
+  z-index: 1;
 }
 
 .chat-screen__main {
-  padding-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 140px 10px 0px 10px;
 }
 
 .chat-screen .status-bar {
   background-color: #abc1d1;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
+  z-index: 1;
 }
 
 .chat-screen__timestamp {
   color: white;
   background-color: #92a4b2;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 20px;
   font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.chat-screen__message {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.chat-screen__message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.chat-screen__message-author {
+  opacity: 0.8;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: black;
+}
+
+.chat-screen__message-talk {
+  background-color: white;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-right: 6px;
+  border-top-left-radius: 0px;
+  color: black;
+}
+
+.chat-screen__message-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.chat-screen__message-time {
+  font-size: 12px;
+  opacity: 0.8;
+  color: black;
+}
+
+.chat-screen__message--own {
+  justify-content: flex-end;
+}
+
+.chat-screen__message--own .chat-screen__message-talk {
+  background-color: var(--kokoa-clone-yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+  margin-right: 0px;
+}
+
+.chat-screen__message--own .chat-screen__message-time {
+  margin-right: 6px;
+}
+
+.chat-screen__message--own .chat-screen__message-content {
+  flex-direction: row-reverse;
+}
+
+.keyboard {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.keyboard input {
+  height: 30px;
+  width: 100%;
+  border: var(--separate-line);
+  border-radius: 20px;
+  padding-left: 12px;
+}
+
+.keyboard__column:first-child {
+  width: 10%;
+}
+
+.keyboard__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.keyboard button {
+  position: absolute;
+  right: -13px;
+  top: 2px;
+  background-color: var(--kokoa-clone-yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.keyboard__column:last-child > i {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.keyboard button:focus,
+.keyboard button:active {
+  outline: none;
+}
+
+.keyboard i:not([class~="fa-arrow-circle-up"]) {
+  opacity: 0.5;
+  color: black;
 }

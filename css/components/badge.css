@@ -21,3 +21,8 @@
   color: white;
   font-weight: 600;
 }
+
+.badge--none-for-space {
+  width: 20px;
+  height: 20px;
+}
