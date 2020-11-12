@@ -50,3 +50,14 @@
   font-weight: 600;
   margin-left: 10px;
 }
+
+.settings__setting-column:hover i,
+.settings__setting-column:hover span:not([class="settings__setting-badge"]) {
+  color: black;
+  transform: scale(1.2);
+}
+
+.settings__setting-column i,
+.settings__setting-column span {
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}

@@ -31,6 +31,7 @@
   border-radius: 20px;
   font-size: 14px;
   margin-bottom: 30px;
+  animation: fadeInDown 0.5s linear;
 }
 
 .chat-screen__message {
@@ -44,6 +45,7 @@
   height: 50px;
   border-radius: 12px;
   margin-right: 10px;
+  animation: fadeInUp 0.5s linear;
 }
 
 .chat-screen__message-author {
@@ -52,6 +54,7 @@
   margin-bottom: 6px;
   display: block;
   color: black;
+  animation: fadeInDown 0.5s linear;
 }
 
 .chat-screen__message-talk {
@@ -61,6 +64,7 @@
   margin-right: 6px;
   border-top-left-radius: 0px;
   color: black;
+  animation: fadeIn 0.5s linear;
 }
 
 .chat-screen__message-content {
@@ -72,6 +76,7 @@
   font-size: 12px;
   opacity: 0.8;
   color: black;
+  animation: fadeIn 0.5s linear;
 }
 
 .chat-screen__message--own {
@@ -83,10 +88,12 @@
   border-top-right-radius: 0px;
   border-top-left-radius: 10px;
   margin-right: 0px;
+  animation: fadeInReverse 0.5s linear;
 }
 
 .chat-screen__message--own .chat-screen__message-time {
   margin-right: 6px;
+  animation: fadeInReverse 0.5s linear;
 }
 
 .chat-screen__message--own .chat-screen__message-content {
@@ -111,6 +118,7 @@
   border: var(--separate-line);
   border-radius: 20px;
   padding-left: 12px;
+  transition: border 1s ease-in-out, border-radius 1s ease-in-out;
 }
 
 .keyboard__column:first-child {
@@ -147,4 +155,82 @@
 .keyboard i:not([class~="fa-arrow-circle-up"]) {
   opacity: 0.5;
   color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInReverse {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.keyboard:focus-within .keyboard__column:first-child i {
+  animation: keyboardRotateZ 1s linear infinite;
+}
+
+@keyframes keyboardRotateZ {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes keyboardHeartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.keyboard:focus-within .keyboard__column:last-child .fa-laugh-wink {
+  animation: keyboardHeartBeat 2s ease-in-out infinite;
+}
+
+.keyboard input:focus {
+  border: 1px solid black;
+  border-radius: 0px;
 }

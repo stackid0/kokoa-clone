@@ -116,3 +116,19 @@
   border-top: var(--separate-line);
   padding-top: 15px;
 }
+
+.open-post__heart-count .fa-heart:hover {
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
